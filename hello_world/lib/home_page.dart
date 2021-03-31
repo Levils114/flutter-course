@@ -30,7 +30,10 @@ class HomePageState extends State<HomePage> {
         child: ListView(
           scrollDirection: Axis.vertical,
           children: [
-            Text('Contador: $counter'),
+            Text(
+              'Contador: $counter',
+              textAlign: TextAlign.center,
+            ),
             SwitchComponent(),
             SizedBox(
               height: 40.0,
