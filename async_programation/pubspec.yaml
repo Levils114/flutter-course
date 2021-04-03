@@ -1,0 +1,10 @@
+name: 'async_programation'
+version: 1.2.3
+homepage: https://example-pet-store.com/newtify
+documentation: https://example-pet-store.com/newtify/docs
+environment:
+  sdk: '>=2.10.0 <3.0.0'
+dependencies:
+  http: ^0.13.1
+dev_dependencies:
+  test: '>=1.15.0 <2.0.0'
