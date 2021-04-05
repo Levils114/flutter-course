@@ -1,3 +1,4 @@
+import 'package:currency_converter/src/screens/async_programation_page.dart';
 import 'package:currency_converter/src/screens/home_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -11,8 +12,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return (MaterialApp(
       theme: ThemeData.dark(),
-      home: HomePage(),
       debugShowCheckedModeBanner: false,
+      initialRoute: 'home_page',
+      routes: {
+        'home_page': (context) => HomePage(),
+        'async_programation_page': (context) => AsyncProgramationPage(),
+      },
     ));
   }
 }

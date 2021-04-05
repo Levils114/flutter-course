@@ -75,7 +75,22 @@ class _HomePageState extends State<HomePage> {
                         onPressed: () {
                           homeController.convert();
                         },
-                        child: Text('CONVERTER')))
+                        child: Text('CONVERTER'))),
+                SizedBox(
+                  height: 16.0,
+                ),
+                SizedBox(
+                    width: 200,
+                    child: ElevatedButton(
+                        style: ButtonStyle(
+                          backgroundColor:
+                              MaterialStateProperty.all(Colors.green),
+                        ),
+                        onPressed: () {
+                          Navigator.of(context)
+                              .pushNamed('async_programation_page');
+                        },
+                        child: Text('Go to Async Page'))),
               ],
             ),
           ),
